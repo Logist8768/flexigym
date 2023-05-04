@@ -1,0 +1,22 @@
+
+name: deploy
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check PHP PSR Styling
+        run: |
+          composer lint
+
+      - name: Checking PHPStan
+        run: |
+          composer phpstan
