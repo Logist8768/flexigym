@@ -12,6 +12,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN docker-php-ext-install pdo_mysql
 WORKDIR /app
 COPY . /app
-RUN composer install
+RUN composer update
 CMD php artisan serve --host=0.0.0.0 --port $PORT
 EXPOSE $PORT
