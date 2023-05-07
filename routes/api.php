@@ -10,3 +10,9 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
  */
+
+use Illuminate\Routing\Route;
+
+Route::get('/aa', function () {
+    dd("hello");
+});
