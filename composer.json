@@ -39,9 +39,9 @@
             "Modules\\": "Modules/"
         },
         "files": [
-            "app/helpers/ApiResponse.php",
-            "modules/user/helpers/tokenCreate.php",
-            "app/helpers/Methods.php"
+            "app/Helpers/ApiResponse.php",
+            "Modules/User/Helpers/TokenCreate.php",
+            "app/Helpers/Methods.php"
         ]
     },
     "autoload-dev": {
